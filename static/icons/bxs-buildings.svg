@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <g id="bxs-buildings" transform="translate(-3 -2)">
+    <path id="Trazado_167" data-name="Trazado 167" d="M7,14h8.442v8.433H7Z" transform="translate(17.085 47.27)" fill="#EEAD0E"/>
+    <path id="Trazado_168" data-name="Trazado 168" d="M83,2H43c-5.523,0-10,4.029-10,9V38H13C7.485,38,3,42.037,3,47V87.5A4.77,4.77,0,0,0,8,92H88a4.77,4.77,0,0,0,5-4.5V11C93,6.029,88.523,2,83,2ZM13,83V47H43V83ZM58,29H48V20H58ZM78,65H68V56H78Zm0-18H68V38H78Zm0-18H68V20H78Z" fill="#EEAD0E"/>
+  </g>
+</svg>

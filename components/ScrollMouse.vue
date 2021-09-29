@@ -30,8 +30,8 @@ export default {
     justify-content: center;
     align-items: center;
 
-    width: 60px;
-    height: 80px;
+    width: 45px;
+    height: 55px;
 
     border-radius: 50%;
 
@@ -39,8 +39,8 @@ export default {
 }
 
 #mouse-svg{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 
 #wheel{
@@ -53,6 +53,11 @@ export default {
     100%{transform: translateY(-8px);}
 }
 
+@media (max-width: $tablet-size){
+    .mouse-shadow{
+        display: none;
+    }
+}
 
 @media (max-width: $phone-size){
     .mouse-shadow{

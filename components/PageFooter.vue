@@ -54,6 +54,7 @@ export default  {
     position: relative;
     color: $secondary;
     
+    margin-top: 50px;
     background-color: #B5BDBD;
     width: 100%;
     p{
@@ -132,8 +133,19 @@ export default  {
 
 @media (max-width: $phone-size){
     .divider{
-        animation: none;
-        width: 200px;
+        display: none;
+    }
+
+    .footer-container{
+        p{
+            font-size: 1em;
+        }
+
+        .contact-info{
+        h2{
+            font-size: 1em;
+        }
+    }
     }
 }
 

@@ -134,6 +134,12 @@ export default {
     top: 70px;
     left: 100px;
   }
+
+  .home-button-area{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 }
 
 
@@ -150,8 +156,10 @@ export default {
   }
 
   .home-button-area{
-    margin-left: 20px;
-  }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 }  
 
 

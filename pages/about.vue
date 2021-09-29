@@ -33,7 +33,7 @@
                         for businesses in my homeland, now I my intentions are to go abroad and
                         expand my services to everyone.
                         </p>
-                        <a href="#">Download CV -></a>
+                        <a class="CV" href="https://drive.google.com/file/d/1xfLunaGF-vwHQhJiXdO_FNMY3kGBuyeB/view?usp=sharing">Download CV -></a>
                     </div> 
             </section>
 
@@ -48,8 +48,6 @@
                         to create strong websites. Along with knowledge about powerful
                         libraries and frameworks like GSAP, Tailwind CSS, SASS.<br>
                         <br>
-                        
-
                     </p> 
                 </div>
                 <TechstackSvg/>   
@@ -195,7 +193,16 @@ body{
 }
 
 
+.CV{
+    background-color: $accent;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: $font;
+    font-weight: 600;
 
+    position: relative;
+    top: 15px;
+}
 
 .about-enter-active, .about-leave-active{
     transition: opacity .5s ease-in-out;
@@ -208,6 +215,7 @@ body{
 @media (max-width: $tablet-size){
     .about-header{
         margin: 30px;
+        margin-left: 50px;
         h1{
             font-size: 2.5em;
         }
@@ -224,6 +232,8 @@ body{
     }
 
     .about-presentation{
+        display: inline;
+        text-align: center;
         .about-text{
             position: relative;
             width: 100%;

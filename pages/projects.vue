@@ -9,8 +9,11 @@
                 <ScrollMouse/>
             </section>
             <section class="projects-portfolio">
-                <projectItems class="porject"  style="background: url('/imgs/portfolio.png')"  projectTitle="My portfolio"/>
-                <projectItems class="porject" style="background: url('/imgs/blog.png')"  projectTitle="Afrorraices Blog"/>
+                <projectItems  style="background: url('/imgs/portfolio.png')"  projectTitle="My portfolio"/>
+                <projectItems  style="background: url('/imgs/blog.png')"  projectTitle="Afrorraices Blog"/>
+            </section>
+            <section class="projects-portfolio">
+                <projectItems  style="background: url('/imgs/codepen.png')"  projectTitle="My Codepen Profile"/>  
             </section>
             <footer>
                 <PageFooter/>
@@ -81,16 +84,14 @@ body{
     justify-content: space-between;
     align-items: center;
 
-    height: 100vh;
+    height: 80vh;
     margin-left: 180px;
     margin-right: 200px;
     margin-top: 40px;
 }
 
 
-.porject{
-    background-size: cover;
-}
+
 
 .projects-enter-active, .projects-leave-active{
     transition: opacity .5s ease-in-out;

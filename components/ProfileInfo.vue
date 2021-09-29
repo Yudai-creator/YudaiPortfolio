@@ -45,26 +45,6 @@ export default {
 
 div{
     position: relative;
-
-    .about-contact{
-        position: relative;
-        top: 15px;
-
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        width: 300px;
-        height: 60px;
-
-        background: $secondary;
-
-        border-radius: 20px;
-
-        margin-top: 15px;
-
-        animation: dropShadow .5s cubic-bezier(0.9,0.03,0.69,0.22) forwards .5s;
-    }
 }
 
 
@@ -76,42 +56,12 @@ div{
     }
 }
 
-@keyframes dropShadow {
-    0%{
-        filter: drop-shadow(1px 1px 0 $secondary);
-    }
 
-    100%{
-        filter: drop-shadow(10px 10px 0 $secondary);
-        transform: translateY(-5px);
-    }
-}
-
-.about-svg-hover{
-    transition: all .5s cubic-bezier(0.9,0.03,0.69,0.22);
-
-    &:hover{
-        filter: drop-shadow(5px 5px 0 #011d57);
-        transform: translateY(-4px);
-    }
-}
 
 @media (max-width: $tablet-size){
-    div{
-        transform: translateX(180px);
-    }
-
-    .about-svg-hover{
-        animation: drop .5s cubic-bezier(0.9,0.03,0.69,0.22) forwards;
-    }
-
-    @keyframes drop {
-        to{
-          filter: drop-shadow(5px 5px 0 #011d57);  
-        }
-    }
 
     .about-profile-pic{ 
+    transform: translateY(20px);
     img{
         width: 250px;
         height: 250px;
@@ -123,35 +73,16 @@ div{
 
     div{
         position: relative;
-        transform: translate(50px, -250px);
-        
-        padding: 30px;
+        transform: translate(-50px, -300px);
     }
-    .about-contact{
-        width: 200px;
-        height: 50px;
-    }
+    
 
     .about-profile-pic{ 
     img{
         width: 200px;
         height: 200px;
     }
-
-    svg{
-        width: 40px;
-        height: 40px;
-    }
-    }
-    .about-svg-hover{
-        animation: drop .5s cubic-bezier(0.9,0.03,0.69,0.22) forwards;
-    }
-
-    @keyframes drop {
-        to{
-          filter: drop-shadow(5px 5px 0 #011d57);  
-        }
-    }
+    }  
 }
 
 @media (max-width: 375px){

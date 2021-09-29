@@ -1,11 +1,13 @@
 <template name="navBar">
     <div class="nav-wrapper">
         
-        <svg ref="toggle" id="toggle-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="#02112E"/>
-        </svg>
+        <a ref="toggle" id="toggle-menu" @click="isActive = !isActive" href="#">
+            <svg    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="#02112E"/>
+            </svg>
+        </a>
         <nav class="navbar">
-            <ul ref="navLinks" class="nav-links">
+            <ul :class="{'show' : isActive, 'hide' : !isActive}" ref="navLinks" class="nav-links">
                 <li id="nav-item-1">
                     <nuxt-link to='/'>Home</nuxt-link>
                 </li>
@@ -20,10 +22,17 @@
                 </li>          
             </ul>
         </nav>
+        <!--
+        <figure>
+            <img src="../static/imgs/favicon4-01.png">
+        </figure>
+        -->
+        <!--
         <div class="lang">
             <nuxt-link to="/es">ES</nuxt-link>
             <nuxt-link to="/en">EN</nuxt-link>
         </div>
+        -->
     </div>
     
 </template>
@@ -38,33 +47,19 @@ export default {
     components:{
         navBar
     },
-    data: {
-        isActive: true
-    },
-    methods: {
-        toggleClass: function(){
-            this.isActive = !this.isActive;
+    data() {
+        return{
+            isActive: false,
         }
+        
     },
     mounted() {
         const {toggle, navLinks} = this.$refs
 
-        let rule = CSSRulePlugin.getRule("display: none")
-
-        let flag = true
-
         toggle.addEventListener("click", () => {
-
-            gsap.to(navLinks, {duration: .5, display: 'block'})
-
-            flag = false
+            gsap.fromTo(toggle, {x: -5, rotate: 20}, {duration: .8, x: 0, rotate: 0, ease: "bounce.out"})
         })
 
-        toggle.addEventListener("click", () =>{
-            if(flag != true){
-                gsap.to(navLinks, {duration: .5, display: 'none'})
-            }
-        })
     }
 
 }
@@ -198,7 +193,7 @@ export default {
     .lang{
         display: flex;
         align-items: center;
-        margin-right: 100px;
+        margin-right: 125px;
         a{
             text-decoration: none;
             font-family: $font;
@@ -231,10 +226,68 @@ export default {
     *::after{
         display: none;
     }
+
+    .nav-wrapper{
+        left: -70px;
+    }
+
+
 }    
 
 //phone-landscape-size
 @media (max-width: $phone-landscape-size){
+    .nav-wrapper{
+        display: inline;
+        overflow: hidden;
+    }
+
+    #toggle-menu{
+        display: block;
+        
+        background-color: $secondary;
+        width: 50px;
+        border-radius: 50%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .lang{
+        display: none;
+    }
+
+    
+
+    .nav-links{
+        flex-direction: column;
+        
+        background-color: $primary;
+        z-index: 2;
+        
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+
+        li{
+            margin-bottom: 15px;
+            text-align: center;
+            right: 50px;
+        }
+    }
+
+    .show{
+        //display: block;
+        height: 140px;
+        transition: all .5s ease-in-out;
+        opacity: 1;
+    }
+
+    .hide{
+        height: 0;
+        transition: all .5s ease-in-out;
+        opacity: 0;
+    }
+    
+
 }    
 
 @media (max-width: $phone-size){
@@ -268,7 +321,7 @@ export default {
         
         background-color: $primary;
         z-index: 2;
-        display: none;
+        
         overflow: hidden;
         transition: all .5s ease-in-out;
 
@@ -277,6 +330,19 @@ export default {
             text-align: center;
             right: 50px;
         }
+    }
+
+    .show{
+        //display: block;
+        height: 140px;
+        transition: all .5s ease-in-out;
+        opacity: 1;
+    }
+
+    .hide{
+        height: 0;
+        transition: all .5s ease-in-out;
+        opacity: 0;
     }
     
 }

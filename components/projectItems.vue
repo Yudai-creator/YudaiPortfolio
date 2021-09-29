@@ -1,7 +1,8 @@
 <template name="projectItem">
     
-        <div ref="project" style="background-size: cover" class="project-box">
+        <div ref="project" class="project-box">
             <h3>{{projectTitle}}</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate inventore laborum corporis ex expedita, sit porro voluptas beatae libero voluptatibus!</p>
         </div>
     
         
@@ -27,6 +28,8 @@ export default {
 
         const tl = new gsap.timeline();
 
+        tl.to(project, {duration: .5, backgroundSize: 'cover', backgroundPosition: 'center'})
+
         
     }
 }
@@ -40,12 +43,15 @@ export default {
     width: 420px;
     height: 350px;
 
+    display: flex;
+
     background-size: cover;
+    background-position: center;
 
     border-radius: 20px;
     border: 2px solid $secondary;
 
-    cursor: pointer;
+    //cursor: pointer;
 
     position: relative;
     
@@ -54,16 +60,22 @@ export default {
 
     //background-image: url("../assets/blog.png");
 
-    &:hover{
-        box-shadow: -10px 10px  $secondary;
-        transform: translateY(-10px);
-    }
+    //&:hover{
+        //box-shadow: -10px 10px  $secondary;
+        //transform: translateY(-10px);
+    //}
 
     h3{
         position: absolute;
         top: 100%;
 
         margin-top: 20px;
+    }
+
+    p{
+      position: absolute;
+        top: 100%;  
+        margin-top: 50px;
     }
 }
 

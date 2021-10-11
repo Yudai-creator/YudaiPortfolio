@@ -25,15 +25,9 @@ export default {
     mounted(){
         const {service} = this.$refs
 
-        gsap.fromTo(service, {scale: 0.9}, 
-        {scrollTrigger: {
-            trigger: service,
-            //start: "top center",
-            markers: false,
-            scrub: true,
-            toggleActions: "restart pause reverse none"
-        }, 
-        duration: .5, scale: 1.1, y: -10, boxShadow: "2px 2px 2px #000, -2px -2px 2px #000"})
+        gsap.fromTo(service, { y: 50, opacity: 0}, 
+        {scrollTrigger: {trigger: service, start: 'top 80%'}, 
+        duration: 1, y: 0, opacity: 1})
 
     }
 }
@@ -45,50 +39,53 @@ export default {
 @use '~/assets/styles/global_variables/variables' as *;
 
 div{
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 300px;
+    color: $secondary;
+    border-radius: 15px;
+    //border: 1px solid $secondary;
+    background-color: #d6d5d5;
 
-    border-radius: 30px;
-    background-color: $secondary;
+    opacity: 0;
     //box-shadow: 3px 3px 5px black, -3px -3px 5px black;
 
     //border: 3px solid $highlight;
 
-    padding: 40px;
+    padding: 30px;
 
     img{
-        width: 50px;
-        height: 50px;
-        margin-top: 20px;
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
     }
 
     h3{
-        font-size: 1.9em;
-        margin-top: 20px;
+        font-size: 1.3em;
+        margin-top: 10px;
     }
 
     p{
-        font-size: 1.4em;
+        font-size: 1em;
         margin-top: 20px;
     }
 }
 @media (max-width: $tablet-size){
 
     div{
-        width: 350px;
+        width: 170px;
         height: 350px;
 
         img{
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
         }
 
         h3{
-            font-size: 1.4em;
+            font-size: 1.1em;
         }
 
         p{
-            font-size: 1.2em;
+            font-size: 0.9em;
         }
     }   
 }

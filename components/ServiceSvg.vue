@@ -106,20 +106,18 @@ export default {
 
         const tl = new gsap.timeline
 
-        tl.fromTo(website, {scale: 0}, {duration: .5, scale: 1})
-          .fromTo(webElement1, {scale: 0}, {duration: .5, scale: 1, rotate: 360})
-          .fromTo(webElement2, {scale: 0}, {duration: .5, scale: 1, rotate: 360})
-          .fromTo(webElement3, {scale: 0}, {duration: .5, scale: 1, rotate: 360})
-          .fromTo(picture, {scale: 0}, {duration: .5, scale: 1})
-          .fromTo(folder, {scale: 0}, {duration: .5, scale: 1})
-          .fromTo(red, {fill: '#fff'}, {duration: .5, fill: '#ff0000'}) 
-          .fromTo(yellow, {fill: '#fff'}, {duration: .5, fill: '#ffff00'})
-          .fromTo(green, {fill: '#fff'}, {duration: .5, fill: '#00ff00'})
+        tl.fromTo(website, {scale: 0}, {duration: .3, scale: 1})
+          .fromTo(webElement1, {scale: 0}, {duration: .4, scale: 1, rotate: 360})
+          .fromTo(webElement2, {scale: 0}, {duration: .4, scale: 1, rotate: 360})
+          .fromTo(webElement3, {scale: 0}, {duration: .4, scale: 1, rotate: 360})
+          .fromTo(picture, {scale: 0}, {duration: .3, scale: 1})
+          .fromTo(folder, {scale: 0}, {duration: .3, scale: 1})
+          .fromTo(red, {fill: '#fff'}, {duration: .3, fill: '#ff0000'}) 
+          .fromTo(yellow, {fill: '#fff'}, {duration: .3, fill: '#ffff00'})
+          .fromTo(green, {fill: '#fff'}, {duration: .3, fill: '#00ff00'})
           .fromTo(guyArm, {rotate: 5}, {duration: 1, transformOrigin: "100 35", rotate: -8, ease: 'power2.inOut', repeat:-1, yoyo: true}, "move")
           .to(picture, {duration: 1, x: -10,  ease: 'power2.inOut', repeat:-1, yoyo: true}, "move-=0.1")
-          .fromTo(girlArm, {rotate: 10}, {duration: 1, transformOrigin: "50 50", rotate: -5, ease: 'power3', repeat:-1, yoyo: true}, "move")
-          .fromTo(girlArm2, {rotate: 10}, {duration: 1, transformOrigin: "50 50", rotate: -5, ease: 'power3', repeat:-1, yoyo: true}, "move-=0.1")
-          .to(folder, {duration: 1, y: 5, x: 2, ease: 'power2.inOut', repeat:-1, yoyo: true}, "move")   
+          
     }
 }
 
@@ -130,7 +128,7 @@ export default {
 
 div{
     position: relative;
-    right: 50px;
+    right: 100px;
     #building_websites{
         position: absolute;
     }

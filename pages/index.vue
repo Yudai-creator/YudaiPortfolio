@@ -18,7 +18,7 @@
           beautiful and functional web applications. "/>
 
         <div class="home-button-area">
-          <ctaButton btntext="View projects" page="/projects"/>
+          <ctaButton btntext="See my work" page="/projects"/>
         </div>
       </section>
 
@@ -50,8 +50,8 @@ export default {
             name: 'homepage',
             content: 'This is Yudai Creator, welcome'
         }
-    },
-    transition: 'home'
+  },
+  transition: 'home'
 
 }
 </script>

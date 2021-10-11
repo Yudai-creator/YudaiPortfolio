@@ -41,11 +41,11 @@ export default {
         
 
         button.addEventListener("mouseover", () => {
-            tl.to(button, {duration: .2, boxShadow: "1px 1px 1px #02112E", y: -2, ease: 'power2'})
+            tl.to(button, {duration: .2, backgroundColor: "#e7a90c", y: -5, ease: 'power3'})
         })
 
         button.addEventListener("mouseout", () => {
-            tl.to(button, {duration: .2, boxShadow: "none", y: 0, ease: 'power2'})
+            tl.to(button, {duration: .2, backgroundColor: "#ffb700", y: 0, ease: 'power3'})
         })
     }
 }

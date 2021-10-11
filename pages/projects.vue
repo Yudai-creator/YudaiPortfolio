@@ -4,16 +4,16 @@
         <main class="projects">
             <section class="projects-headline">
                 <h1>
-                    Projects<span>.</span>
+                    Latest Work<span>.</span>
                 </h1>
                 <ScrollMouse/>
             </section>
             <section class="projects-portfolio">
-                <projectItems  style="background: url('/imgs/portfolio.png')"  projectTitle="My portfolio"/>
-                <projectItems  style="background: url('/imgs/blog.png')"  projectTitle="Afrorraices Blog"/>
+                <projectItems  style="background: url('/imgs/Thumbnail.png')"  projectTitle="My portfolio" action="Code ->" description="My portfolio of projects, to show my latest work. Made with Nuxt.js, Sass and GSAP for the animations."/>
+                <projectItems  style="background: url('/imgs/Afrorraices.png')"  projectTitle="Afrorraices Blog" action="Go Live ->" description="A blog website made with blogger CMS, but with personal customization of HTML and CSS to make it more appealing."/>
             </section>
             <section class="projects-portfolio">
-                <projectItems  style="background: url('/imgs/codepen.png')"  projectTitle="My Codepen Profile"/>  
+                <projectItems  style="background: url('/imgs/codepen.png')"  projectTitle="My Codepen Profile" action="Go Live ->" description="Thi is my Codepen profile where I store my work refering to animations and code snippets I share in Twitter."/>  
             </section>
             <footer>
                 <PageFooter/>
@@ -81,12 +81,10 @@ body{
 .projects-portfolio{
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     height: 80vh;
-    margin-left: 180px;
-    margin-right: 200px;
     margin-top: 40px;
 }
 
@@ -99,6 +97,12 @@ body{
 
 .projects-enter, .projects-leave-active{
     opacity: 0;
+}
+
+@media (max-width: $tablet-size){
+    .projects-portfolio{
+        height: 50vh;
+    }
 }
 
 

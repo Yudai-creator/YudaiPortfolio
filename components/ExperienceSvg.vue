@@ -3,12 +3,12 @@
         <svg id="remote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
                     <g id="working_anywhere" data-name="working anywhere">
                         <ellipse ref="sun" id="sun" cx="38.87" cy="79.53" rx="38.18" ry="38.7" fill="#EEAD0E"/>
-                        <g id="plant-2">
+                        <g ref="plant2" id="plant-2">
                             <path id="Trazado_59" data-name="Trazado 59" d="M443.64,328.48a70.8,70.8,0,0,1-3.23,19.39l-.14.44H428.2c0-.13,0-.28,0-.44.8-9.37,5.44-66.44-.1-76.19C428.62,272.47,444.57,298.69,443.64,328.48Z" fill="#e6e6e6"/>
                             <path id="Trazado_60" data-name="Trazado 60" d="M442.74,347.87c-.11.15-.21.3-.32.44h-9.05l.24-.44c1.49-2.73,5.92-10.91,10-19.39,4.42-9.11,8.47-18.57,8.13-22C451.87,307.26,454.93,330.79,442.74,347.87Z" fill="#e6e6e6"/>
                         </g>
                         <rect id="Rectángulo_58" data-name="Rectángulo 58" x="153.68" y="348.31" width="347.02" height="1.15" fill="#e6e6e6"/>
-                        <g id="plant-1">
+                        <g ref="plant1" id="plant-1">
                             <path id="Trazado_84" data-name="Trazado 84" d="M183.52,322.38a91.21,91.21,0,0,0,4.15,24.86l.18.56h15.46c0-.17,0-.36-.05-.56-1-12-7-85.16.14-97.66C202.78,250.59,182.32,284.2,183.52,322.38Z" fill="#e6e6e6"/>
                             <path id="Trazado_85" data-name="Trazado 85" d="M184.68,347.24c.13.19.27.37.41.56h11.6l-.31-.56c-1.92-3.51-7.59-14-12.86-24.86-5.66-11.68-10.85-23.8-10.41-28.19C173,295.18,169.06,325.35,184.68,347.24Z" fill="#e6e6e6"/>
                         </g>
@@ -66,7 +66,7 @@ export default {
     },
     mounted(){
 
-        const{laptop, table, tree, sun, content1, content2, content3} = this.$refs
+        const{laptop, table, tree, sun, content1, content2, content3, plant1, plant2} = this.$refs
 
         const tl = new gsap.timeline({
             scrollTrigger: {
@@ -75,7 +75,7 @@ export default {
             },
             defaults: {
                 ease: 'power2',
-                duration: .5
+                duration: .4
             }
         });
 
@@ -87,6 +87,13 @@ export default {
           .fromTo(content1, {scale: 0}, { scale: 1})
           .fromTo(content2, {scale: 0}, { scale: 1})
           .fromTo(content3, {scale: 0}, { scale: 1})
+
+          .fromTo(plant1, {scale: 0}, { scale: 1})
+          .fromTo(plant2, {scale: 0}, { scale: 1})
+
+          .fromTo(content1, {x: 0}, {duration: .9, x: 5, repeat:-1, yoyo: true, ease: 'power2'}, "label")
+          .fromTo(content2, {x: 0}, {duration: .9, x: 7, repeat:-1, yoyo: true, ease: 'power2'}, "label+=0.5")
+          .fromTo(content3, {x: 0}, {duration: .9, x: 4, repeat:-1, yoyo: true, ease: 'power2'}, "label+=0.3")
 
 
     }

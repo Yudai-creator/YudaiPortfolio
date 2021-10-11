@@ -1,9 +1,15 @@
 <template name="projectItem">
-    
-        <div ref="project" class="project-box">
-            <h3>{{projectTitle}}</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate inventore laborum corporis ex expedita, sit porro voluptas beatae libero voluptatibus!</p>
+    <div ref="project" class="container">
+        
+        <div class="project-box">
+        </div>   
+        <div class="text">
+            <h3 class="project__text">{{projectTitle}}</h3>
+            <p class="project__text">{{description}}</p><br>
+            <a href="#">{{action}}</a>
         </div>
+    </div>
+        
     
         
 </template>
@@ -22,6 +28,8 @@ export default {
     props: {
         projectTitle: String,
         imgUrl: String,
+        description: String,
+        action: String
     },
     mounted(){
         const {project} = this.$refs
@@ -35,21 +43,16 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '~/assets/styles/global_variables/variables' as *;
 
 
-.project-box{
-    width: 420px;
-    height: 350px;
-
-    display: flex;
-
-    background-size: cover;
-    background-position: center;
-
-    border-radius: 20px;
-    border: 2px solid $secondary;
+.container{
+    width: 500px;
+    height: 400px;
+    
+    border-radius: 10px;
+    //border: 5px solid $secondary;
 
     //cursor: pointer;
 
@@ -60,34 +63,49 @@ export default {
 
     //background-image: url("../assets/blog.png");
 
-    //&:hover{
-        //box-shadow: -10px 10px  $secondary;
-        //transform: translateY(-10px);
-    //}
-
-    h3{
-        position: absolute;
-        top: 100%;
-
-        margin-top: 20px;
+    &:hover{
+        background-color: rgba(219, 219, 219, 0.89);
     }
 
-    p{
-      position: absolute;
-        top: 100%;  
-        margin-top: 50px;
+    .project-box{
+        position: relative;
+        width: 490px;
+        height: 400px;
+        a{
+            text-decoration: none;
+            
+            color: $secondary;
+            
+            
+        }
+        
+    }
+}
+
+@media (max-width: $tablet-size){
+    .container{
+        width: 400px;
+        height: 300px;
+    }
+
+    .project-box{
+        transform: translateY(100px);
     }
 }
 
 @media (max-width: $phone-size){
-    .project-box{
+    .container{
         width: 380px;
         height: 300px;
+
+        .project-box{
+            transform: translateY(280px);
+        }
     }
 }
 
 @media (max-width: 375px){
-    .project-box{
+    .container{
         width: 320px;
         height: 270px;
     }

@@ -137,11 +137,16 @@ export default{
       .fromTo(leaf4, {scale: 0}, {duration: .2, scale: 1}, 1.6)
       .fromTo(leaf5, {scale: 0}, {duration: .2, scale: 1}, 1.7)
       
-      .fromTo(penGreen, {y: -20}, {duration: 1, y: 0, repeat:-1, yoyo: true, ease: 'bounce'})
-      .fromTo(penBlue, {y: -20}, {duration: 1, y: 0, repeat:-1, yoyo: true, ease: 'bounce'})
-      .fromTo(penOrange, {y: -20}, {duration: 1, y: 0, repeat:-1, yoyo: true, ease: 'bounce'},.2)
+      .fromTo(penGreen, {y: -20}, {duration: 1.2, y: 0, repeat:-1, yoyo: true, ease: 'bounce'})
+      .fromTo(penBlue, {y: -20}, {duration: 1.2, y: 0, repeat:-1, yoyo: true, ease: 'bounce'})
+      .fromTo(penOrange, {y: -20}, {duration: 1.2, y: 0, repeat:-1, yoyo: true, ease: 'bounce'},.2)
 
-      .fromTo(line, {scale: .5}, {duration: 1, scale: 1, repeat:-1, yoyo: true})
+      //.fromTo(website, {scale: 1}, {duration: .8, scale: 1.1, repeat:-1, yoyo: true, ease: 'power3'})
+
+      //.fromTo(contentBlock, {rotate: 10}, {duration: .8,  rotate: -10, repeat:-1, yoyo: true, ease: 'power3'})
+      //.fromTo(contentBlock2, {rotate: 10}, {duration: .8,  rotate: -10, repeat:-1, yoyo: true, ease: 'power3'})
+
+      //.fromTo(line, {scale: .5}, {duration: 1, scale: 1, repeat:-1, yoyo: true})
       
       //.to(plant, {duration: 1, skewX: 15, skewY: 15, repeat:-1, yoyo: true})
       //.to(leaf2, {duration: 1, skewX: 15, skewY: 15, repeat:-1, yoyo: true})

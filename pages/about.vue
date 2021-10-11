@@ -2,13 +2,12 @@
     <div>
         <navBar/>
         <header class="about-header">
-            <h1>{{title}}<span>.</span>
-            </h1>
+            <h1 ref="headline">{{title}}<span>.</span></h1>
             <ScrollMouse/>  
         </header>
         <main class="about-content">
             <section class="about-presentation">
-                <div class="about-text">
+                <div ref="text" class="about-text">
                     <p>I am currently working as a Front-End Developer.<br> 
                     I have experience as a UI/UX designer and<br> 
                     building beautiful websites its my gig.<br>
@@ -33,7 +32,7 @@
                         for businesses in my homeland, now I my intentions are to go abroad and
                         expand my services to everyone.
                         </p>
-                        <a class="CV" href="https://drive.google.com/file/d/1xfLunaGF-vwHQhJiXdO_FNMY3kGBuyeB/view?usp=sharing">Download CV -></a>
+                        <a class="about__CV" target="_blank" href="https://drive.google.com/file/d/1xfLunaGF-vwHQhJiXdO_FNMY3kGBuyeB/view?usp=sharing">Download CV</a>
                     </div> 
             </section>
 
@@ -67,6 +66,8 @@ import ProfileInfo from '../components/ProfileInfo.vue'
 import ExperienceSvg from '../components/ExperienceSvg.vue'
 import TechstackSvg from '../components/TechstackSvg.vue'
 import ScrollMouse from '../components/ScrollMouse.vue'
+
+import { gsap } from "gsap";
 export default {
     components:{
     navBar,
@@ -88,6 +89,15 @@ export default {
 
         }
     },
+  mounted(){
+      const {headline, text, cta} = this.$refs
+
+      let tl = new gsap.timeline();
+
+      tl.from(headline, {duration: .5, stagger: .5, opacity: 0, y: -5, ease: 'power2.inOut'})
+        .from(text, {duration: .5, opacity: 0, y: -5, ease: 'power2.inOut'})
+        //.from(cta, {duration: .5, opacity: 0, y: -5, ease: 'power2.inOut'})
+  },  
     transition: 'about'
 }
 </script>
@@ -193,7 +203,7 @@ body{
 }
 
 
-.CV{
+.about__CV{
     background-color: $accent;
     padding: 5px;
     border-radius: 5px;
@@ -202,6 +212,13 @@ body{
 
     position: relative;
     top: 15px;
+
+    transition: all .5 ease-in-out;
+
+    &:hover{
+        background-color: #e7a90c;
+        transform: translateY(-2px);
+    }
 }
 
 .about-enter-active, .about-leave-active{

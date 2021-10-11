@@ -20,14 +20,14 @@
                             <circle ref="circle2" id="circle-02" cx="34.5" cy="66.5" r="32" fill="#cfd5e3" stroke="#02112e" stroke-width="5"/>
                             <circle ref="circle3" id="circle-01" cx="1057.5" cy="34.5" r="32" fill="#cfd5e3" stroke="#02112e" stroke-width="5"/>
                             <g ref="code" id="code-typing">
-                                <path id="arrow-shadow-2" d="M451.94,404.78l61.9-53.1-61.9-53.1,18.9-16.1,80.8,69.3L470.84,421Z" fill="#e6e6e6"/>
+                                <path ref="arrowShadow2" id="arrow-shadow-2" d="M451.94,404.78l61.9-53.1-61.9-53.1,18.9-16.1,80.8,69.3L470.84,421Z" fill="#e6e6e6"/>
                                 <rect id="Rectángulo_55" data-name="Rectángulo 55" x="333.64" y="327.18" width="25.2" height="25.2" fill="#e6e6e6"/>
                                 <rect id="Rectángulo_56" data-name="Rectángulo 56" x="408.54" y="327.18" width="25.2" height="25.2" fill="#e6e6e6"/>
                                 <rect id="Rectángulo_57" data-name="Rectángulo 57" x="371.04" y="327.18" width="25.2" height="25.2" fill="#e6e6e6"/>
-                                <path id="arrow-shadow-1" d="M334.34,404.18l-62-53.1,61.9-53-18.9-16.2-80.7,69.2,80.8,69.3Z" fill="#e6e6e6"/>
-                                <path id="arrow-2" d="M451.94,392.88l61.9-53.1-61.9-53.1,18.9-16.1,80.8,69.3-80.8,69.2-18.9-16.2Z" fill="#EEAD0E"/>
+                                <path ref="arrowShadow1" id="arrow-shadow-1" d="M334.34,404.18l-62-53.1,61.9-53-18.9-16.2-80.7,69.2,80.8,69.3Z" fill="#e6e6e6"/>
+                                <path ref="arrow2" id="arrow-2" d="M451.94,392.88l61.9-53.1-61.9-53.1,18.9-16.1,80.8,69.3-80.8,69.2-18.9-16.2Z" fill="#EEAD0E"/>
                                 <path id="dots" d="M325.84,345.58H351v-25.2h-25.2Zm126.4-25.2H427v25.2h25.2Zm-75.8,25.2h25.2v-25.2h-25.2Z" fill="#EEAD0E"/>
-                                <path id="arrow-1" d="M334.34,392.28l-62-53.1,61.9-53.1-18.9-16.2-80.8,69.3,80.8,69.3Z" fill="#EEAD0E"/>
+                                <path ref="arrow1" id="arrow-1" d="M334.34,392.28l-62-53.1,61.9-53.1-18.9-16.2-80.8,69.3,80.8,69.3Z" fill="#EEAD0E"/>
                             </g>
                         </g>
         </svg>
@@ -53,7 +53,9 @@ export default {
     },
     mounted(){
 
-        const{circle1, circle2, circle3, frame, shadow, board, code, lines} = this.$refs
+        const{circle1, circle2, circle3, frame, shadow, board, code, 
+        lines, arrow1, arrow2, arrowShadow1, arrowShadow2 
+        } = this.$refs
 
         const tl = new gsap.timeline({
             scrollTrigger: {
@@ -63,7 +65,7 @@ export default {
             },
             defaults: {
                 ease: 'power2',
-                duration: .5
+                duration: .4
             }
         });
 
@@ -76,6 +78,11 @@ export default {
           .fromTo(circle1, {scale: 0}, { scale: 1})
           .fromTo(circle2, {scale: 0}, { scale: 1})
           .fromTo(circle3, {scale: 0}, { scale: 1})
+
+          .fromTo(arrow1, {x: -8}, {duration: 1, x: 0, repeat:-1, yoyo: true, ease: 'power2'},"label")
+          .fromTo(arrowShadow1, {x: -8}, {duration: 1, x: 0, repeat:-1, yoyo: true, ease: 'power2'},"label")
+          .fromTo(arrow2, {x: 8}, {duration: 1, x: 0, repeat:-1, yoyo: true, ease: 'power2'}, "label")
+          .fromTo(arrowShadow2, {x: 8}, {duration: 1, x: 0, repeat:-1, yoyo: true, ease: 'power2'},"label")
           
         
 

@@ -93,13 +93,10 @@
     </div>
 </template>
 <script>
-import HomeSvgs from '../components/HomeSvgs.vue'
+
 
 import { gsap } from "gsap";
 export default{
-    components:{
-        HomeSvgs
-    },
     mounted() { 
     const { pc, pcShadow, standStand, pcStand, pcForehead, turnButton, screen,
             contentBlock, contentBlock2, contentBlock3, contentLines, extent, extent2,

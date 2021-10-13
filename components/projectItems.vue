@@ -1,4 +1,4 @@
-<template name="projectItem">
+<template name="ProjectItems">
     <div ref="project" class="container">
         
         <div class="project-box">
@@ -14,17 +14,13 @@
         
 </template>
 <script>
-import projectItems from './projectItems.vue'
+
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
-    components:{
-        projectItems,
-        
-    },
     props: {
         projectTitle: String,
         imgUrl: String,

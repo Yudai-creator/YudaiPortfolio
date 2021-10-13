@@ -1,6 +1,6 @@
 <template name="projects">
     <div>
-        <navBar/>
+        <NavBar/>
         <main class="projects">
             <section class="projects-headline">
                 <h1>
@@ -9,11 +9,11 @@
                 <ScrollMouse/>
             </section>
             <section class="projects-portfolio">
-                <projectItems  style="background: url('/imgs/Thumbnail.png')"  projectTitle="My portfolio" action="Code ->" description="My portfolio of projects, to show my latest work. Made with Nuxt.js, Sass and GSAP for the animations."/>
-                <projectItems  style="background: url('/imgs/Afrorraices.png')"  projectTitle="Afrorraices Blog" action="Go Live ->" description="A blog website made with blogger CMS, but with personal customization of HTML and CSS to make it more appealing."/>
+                <ProjectItems  style="background: url('/imgs/Thumbnail.png')"  projectTitle="My portfolio" action="Code ->" description="My portfolio of projects, to show my latest work. Made with Nuxt.js, Sass and GSAP for the animations."/>
+                <ProjectItems  style="background: url('/imgs/Afrorraices.png')"  projectTitle="Afrorraices Blog" action="Go Live ->" description="A blog website made with blogger CMS, but with personal customization of HTML and CSS to make it more appealing."/>
             </section>
             <section class="projects-portfolio">
-                <projectItems  style="background: url('/imgs/codepen.png')"  projectTitle="My Codepen Profile" action="Go Live ->" description="Thi is my Codepen profile where I store my work refering to animations and code snippets I share in Twitter."/>  
+                <ProjectItems  style="background: url('/imgs/codepen.png')"  projectTitle="My Codepen Profile" action="Go Live ->" description="Thi is my Codepen profile where I store my work refering to animations and code snippets I share in Twitter."/>  
             </section>
             <footer>
                 <PageFooter/>
@@ -23,14 +23,14 @@
 </template>
 <script>
 // JS
-import navBar from '../components/navBar.vue'
-import projectItem from '../components/projectItems.vue'
+import NavBar from '../components/NavBar.vue'
+import ProjectItems from '../components/ProjectItems.vue'
 import PageFooter from '../components/PageFooter.vue'
 import ScrollMouse from '../components/ScrollMouse.vue'
 export default {
     components:{
-    navBar,
-    projectItem,
+    NavBar,
+    ProjectItems,
     PageFooter,
     ScrollMouse
   },

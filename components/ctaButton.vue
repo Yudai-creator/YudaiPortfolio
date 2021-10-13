@@ -1,4 +1,4 @@
-<template name="ctaButton">
+<template name="CtaButton">
     <div ref="button" class="btn-area">
         <nuxt-link v-bind:to="page">{{btntext}}</nuxt-link>
     </div>
@@ -6,16 +6,13 @@
 
 <script>
 
-import ctaButton from '../components/ctaButton.vue'
+
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
-    components:{
-        ctaButton
-    },
     props: {
         btntext: String,
         page: String,          

@@ -11,11 +11,8 @@
 
 
 <script>
-import RichText from '../components/RichText.vue'
+
 export default{
-    components:{
-        RichText
-    },
     props: {
         headline: String,
         text: String

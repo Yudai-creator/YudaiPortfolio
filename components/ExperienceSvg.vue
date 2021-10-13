@@ -54,16 +54,12 @@
 </template>
 <script>
 
-import ExperienceSvg from '../components/ExperienceSvg.vue'
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
-    components: {
-        ExperienceSvg
-    },
     mounted(){
 
         const{laptop, table, tree, sun, content1, content2, content3, plant1, plant2} = this.$refs

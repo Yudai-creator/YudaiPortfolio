@@ -39,11 +39,9 @@
 </template>
 <script>
 
-import PageFooter from '../components/PageFooter.vue'
+
 export default  {
-    components:{
-        PageFooter
-    }
+    
 }
 </script>
 <style lang="scss" scoped>

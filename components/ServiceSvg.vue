@@ -92,13 +92,10 @@
     </div>
 </template>
 <script>
-import ServiceSvg from '../components/ServiceSvg.vue'
+
 
 import { gsap } from "gsap";
 export default {
-     components:{
-        ServiceSvg
-    },
     mounted(){
         const {website, red, yellow, green, webElement1, webElement2, webElement3, picture, folder,
                 guy, guyArm, girlArm, girlArm2,

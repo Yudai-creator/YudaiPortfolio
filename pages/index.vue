@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <navBar/>
+  <NavBar/>
     <main class="home">
       <section class="home-text">
         <!--
@@ -18,7 +18,7 @@
           beautiful and functional web applications. "/>
 
         <div class="home-button-area">
-          <ctaButton btntext="See my work" page="/projects"/>
+          <CtaButton btntext="See my work" page="/projects"/>
         </div>
       </section>
 
@@ -31,15 +31,15 @@
 </template>
 
 <script>
-import navBar from '../components/navBar.vue'
-import ctaButton from '../components/ctaButton.vue'
+import NavBar from '../components/NavBar.vue'
+import CtaButton from '../components/CtaButton.vue'
 
 import RichText from '../components/RichText.vue'
 import HomeSvgs from '../components/HomeSvgs.vue'
 export default {
   components:{
-    navBar,
-    ctaButton,
+    NavBar,
+    CtaButton,
     RichText,
     HomeSvgs
   },

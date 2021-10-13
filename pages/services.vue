@@ -1,6 +1,6 @@
 <template name="component-name">
     <div>
-        <navBar/>
+        <NavBar/>
         <header class="service-header">
             <h1 ref="headline">{{title}}</h1>
             <ScrollMouse/>
@@ -16,7 +16,7 @@
                         You have come to the right place.  
                     </p>
                 <div ref="cta" class="service-button-area">
-                    <ctaButton  class="btn" btntext="Get in touch!" page="#"/>
+                    <CtaButton  class="btn" btntext="Get in touch!" page="#"/>
                 </div>
                 </div>
                 <ServiceSvg/>
@@ -43,8 +43,8 @@
 
 <script>
 
-import navBar from '../components/navBar.vue'
-import ctaButton from '../components/ctaButton.vue'
+import NavBar from '../components/NavBar.vue'
+import CtaButton from '../components/CtaButton.vue'
 import ServiceDetails from '../components/ServiceDetails.vue'
 import PageFooter from '../components/PageFooter.vue'
 import ServiceSvg from '../components/ServiceSvg.vue'
@@ -54,8 +54,8 @@ import ContactForm from '../components/ContactForm.vue'
 import { gsap } from "gsap";
 export default {
     components:{
-    navBar,
-    ctaButton,
+    NavBar,
+    CtaButton,
     ServiceDetails,
     PageFooter,
     ServiceSvg,

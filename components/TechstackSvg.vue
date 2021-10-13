@@ -41,16 +41,13 @@
 
 
 <script>
-import TechstackSvg from '../components/TechstackSvg.vue'
+
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
-    components: {
-        TechstackSvg
-    },
     mounted(){
 
         const{circle1, circle2, circle3, frame, shadow, board, code, 

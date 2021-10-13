@@ -1,6 +1,6 @@
 <template name="about">
     <div>
-        <navBar/>
+        <NavBar/>
         <header class="about-header">
             <h1 ref="headline">{{title}}<span>.</span></h1>
             <ScrollMouse/>  
@@ -59,7 +59,7 @@
 </template>
 <script>
 // JS
-import navBar from '../components/navBar.vue'
+import NavBar from '../components/NavBar.vue'
 import RichText from '../components/RichText.vue'
 import PageFooter from '../components/PageFooter.vue'
 import ProfileInfo from '../components/ProfileInfo.vue'
@@ -70,7 +70,7 @@ import ScrollMouse from '../components/ScrollMouse.vue'
 import { gsap } from "gsap";
 export default {
     components:{
-    navBar,
+    NavBar,
     PageFooter,
     RichText,
     ProfileInfo,

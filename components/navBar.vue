@@ -1,4 +1,4 @@
-<template name="navBar">
+<template name="NavBar">
     <div class="nav-wrapper">
 
         
@@ -41,15 +41,12 @@
 </template>
 <script>
 
-import navBar from '../components/navBar.vue'
+//import NavBar from '../components/NavBar.vue'
 import { gsap } from "gsap";
 
 import { CSSRulePlugin } from "gsap/dist/CSSRulePlugin";
 gsap.registerPlugin(CSSRulePlugin );
 export default {
-    components:{
-        navBar
-    },
     data() {
         return{
             isActive: false,

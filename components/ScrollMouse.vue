@@ -13,13 +13,10 @@
 
 
 <script>
-import ScrollMouse from '../components/ScrollMouse.vue'
+
 
 import { gsap } from "gsap";
 export default {
-    components: {
-        ScrollMouse
-    },
     mounted(){
         const {wheel} = this.$refs
 

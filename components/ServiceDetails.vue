@@ -12,11 +12,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-import ServiceDetails from '../components/ServiceDetails.vue'
+
 export default {
-    components:{
-        ServiceDetails
-    },
     props: {
         icon: String,
         headline: String,

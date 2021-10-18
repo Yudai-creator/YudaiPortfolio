@@ -12,7 +12,9 @@
   "dependencies": {
     "core-js": "^3.18.3",
     "gsap": "^3.8.0",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "source-map-resolve": "^0.6.0",
+    "url-search-params": "^1.1.0"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.2.1",

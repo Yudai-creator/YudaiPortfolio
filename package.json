@@ -14,7 +14,10 @@
     "core-js": "^3.18.3",
     "gsap": "^3.8.0",
     "nuxt": "^2.13.3",
+    "resolve-url": "^0.2.1",
     "source-map-resolve": "^0.6.0",
+    "svgo": "^2.7.0",
+    "urix": "^0.1.0",
     "url-search-params": "^1.1.0"
   },
   "devDependencies": {

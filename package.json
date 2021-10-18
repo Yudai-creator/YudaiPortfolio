@@ -12,6 +12,7 @@
   "dependencies": {
     "chokidar": "^3.5.2",
     "core-js": "^3.18.3",
+    "flatten": "^1.0.3",
     "gsap": "^3.8.0",
     "nuxt": "^2.13.3",
     "resolve-url": "^0.2.1",

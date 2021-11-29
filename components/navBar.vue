@@ -1,14 +1,14 @@
 <template name="NavBar">
     <div class="nav-wrapper">
 
-        
-        
         <a ref="toggle" id="toggle-menu" @click="isActive = !isActive" href="#">
             <svg    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="#02112E"/>
             </svg>
         </a>
         
+        <nuxt-link to="/"><img src="/logo/VER_VERTICAL_FULL.png"></nuxt-link>
+
         <nav class="navbar">
             <ul :class="{'show' : isActive, 'hide' : !isActive}" ref="navLinks" class="nav-links">
                 <li id="nav-item-1">
@@ -82,12 +82,20 @@ export default {
         align-items: center;
         justify-content: space-between;
         position: relative;
+        padding: 10px;
+
+        img{
+            width: 80px;
+            height: 80px;
+            margin-left: 110px;
+        }
     }
 
     .navbar{
         margin: 30px;
         background: $primary;
         position: relative;
+        margin-right: 120px;
     }
 
     ul{
@@ -120,7 +128,7 @@ export default {
         
         width: 0px;
         height: 2px;
-        background-color: $secondary;
+        background-color: $terciary;
 
         top: 100%;
         left: 0%;
@@ -139,7 +147,7 @@ export default {
        
         width: 0px;
         height: 2px;
-        background-color: $secondary;
+        background-color: $terciary;
 
         top: 100%;
         left: 0%;
@@ -158,7 +166,7 @@ export default {
 
         width: 0px;
         height: 2px;
-        background-color: $secondary;
+        background-color: $terciary;
        
         top: 100%;
         left: 0%;
@@ -177,7 +185,7 @@ export default {
 
         width: 0px;
         height: 2px;
-        background-color: $secondary;
+        background-color: $terciary;
         
         top: 100%;
         left: 0%;
@@ -190,28 +198,7 @@ export default {
     }
 
 
-    .lang{
-        display: flex;
-        align-items: center;
-        margin-right: 125px;
-        a{
-            text-decoration: none;
-            font-family: $font;
-            color: $secondary;
-            font-weight: 700;
-            margin: 10px;
 
-            &:nth-child(2)::before{
-                content: '';
-                position: absolute;
-                width: 12px;
-                height: 30px;
-
-                transform: translate(-10px, -3px);
-                border-left: 2px solid $secondary;
-            }
-        }
-    }
 
 
 //table-landscape-size

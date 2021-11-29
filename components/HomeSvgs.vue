@@ -2,7 +2,7 @@
     <div>
         <svg id="desktop_pc" data-name="desktop pc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 971.44 502">
         <path ref="plant" id="plant" d="M102.72,389s-19-83,23-190" fill="none" stroke="#535461" stroke-miterlimit="10" stroke-width="3" opacity="0.6" style="isolation:isolate"/>
-        <path ref="plantCase" id="plant-case" d="M28.72,364h147s29,37-16,92h-116S1.72,418,28.72,364Z" fill="#EEAD0E"/>
+        <path ref="plantCase" id="plant-case" d="M28.72,364h147s29,37-16,92h-116S1.72,418,28.72,364Z" fill="#6820FF"/>
         <g ref="leaf" id="leaf">
           <path id="Trazado_10" data-name="Trazado 10" d="M123.61,204.5s14.61-26,49.61-18c0,0-28.93,49.26-55,33.13Z" fill="#4DB670"/>
           <path id="Trazado_15" data-name="Trazado 15" d="M118.72,220s38-29,54-34" fill="none" stroke="#535461" stroke-miterlimit="10" opacity="0.3" style="isolation:isolate"/>
@@ -43,9 +43,9 @@
           <circle ref="turnButton" id="turn-button" cx="485.72" cy="352" r="9" fill="#535461" stroke="#02112e" stroke-miterlimit="10" stroke-width="0.5"/>
           <path ref="standStand" id="stand-stand" d="M399.89,436H571.55a8.17,8.17,0,0,1,8.17,8.17V456h-188V444.17a8.17,8.17,0,0,1,8.17-8.17Z" fill="#cfd5e3"/>
           <rect ref="website" id="website" x="320.72" y="71.12" width="330" height="187.76" rx="4.5" fill="#e5e5e5"/>
-          <rect ref="contentBlock" id="content-block" x="414.52" y="98.91" width="35.44" height="31.9" rx="4.5" fill="#EEAD0E"/>
-          <rect ref="contentBlock2" id="content-block-2"  x="414.52" y="148.53" width="35.44" height="31.9" rx="4.5" fill="#EEAD0E"/>
-          <rect ref="contentBlock3" id="content-block-3"  x="414.52" y="198.15" width="35.44" height="31.9" rx="4.5" fill="#EEAD0E"/>
+          <rect ref="contentBlock" id="content-block" x="414.52" y="98.91" width="35.44" height="31.9" rx="4.5" fill="#6820FF"/>
+          <rect ref="contentBlock2" id="content-block-2"  x="414.52" y="148.53" width="35.44" height="31.9" rx="4.5" fill="#6820FF"/>
+          <rect ref="contentBlock3" id="content-block-3"  x="414.52" y="198.15" width="35.44" height="31.9" rx="4.5" fill="#6820FF"/>
           <g ref="contentLines" id="content-lines">
             <path ref="line" id="line" d="M462.36,98.91h92.15a1.77,1.77,0,0,1,1.77,1.77h0a1.77,1.77,0,0,1-1.77,1.77H462.36a1.77,1.77,0,0,1-1.77-1.77h0A1.77,1.77,0,0,1,462.36,98.91Z" fill="#9398a0"/>
             <path id="line-2" data-name="line" d="M462.36,109.55h76a1.77,1.77,0,0,1,1.77,1.77h0a1.77,1.77,0,0,1-1.77,1.77h-76a1.77,1.77,0,0,1-1.77-1.77h0A1.77,1.77,0,0,1,462.36,109.55Z" fill="#9398a0"/>
@@ -58,12 +58,12 @@
             <rect id="Rectángulo_22" data-name="Rectángulo 22" x="408.22" y="435.5" width="156" height="3"/>
           </g>
           <g ref="extent" id="extent">
-            <line id="extent-line" x1="637.22" y1="168.5" x2="682.1" y2="168.5" fill="#EEAD0E" stroke="#EEAD0E" stroke-miterlimit="10" stroke-width="2"/>
-            <circle id="extent-dot" cx="637.22" cy="168.5" r="4" fill="#EEAD0E"/>
+            <line id="extent-line" x1="637.22" y1="168.5" x2="682.1" y2="168.5" fill="#6820FF" stroke="#6820FF" stroke-miterlimit="10" stroke-width="2"/>
+            <circle id="extent-dot" cx="637.22" cy="168.5" r="4" fill="#6820FF"/>
           </g>
           <g ref="extent2" id="extent-2" data-name="extent">
-            <line id="extent-line-2" data-name="extent-line" x1="481.72" y1="251.54" x2="481.2" y2="296.42" fill="#EEAD0E" stroke="#EEAD0E" stroke-miterlimit="10" stroke-width="2"/>
-            <circle id="extent-dot-2" data-name="extent-dot" cx="481.72" cy="251.54" r="4" fill="#EEAD0E"/>
+            <line id="extent-line-2" data-name="extent-line" x1="481.72" y1="251.54" x2="481.2" y2="296.42" fill="#6820FF" stroke="#6820FF" stroke-miterlimit="10" stroke-width="2"/>
+            <circle id="extent-dot-2" data-name="extent-dot" cx="481.72" cy="251.54" r="4" fill="#6820FF"/>
           </g>
         </g>
         <g id="shadow-3" data-name="shadow" opacity="0.7">
@@ -80,7 +80,7 @@
         <g ref="penOrange" id="pen-orange"><rect id="pen-2" data-name="pen" x="884.72" y="346" width="16" height="100" fill="#535461"/>
           <rect id="orange-2" data-name="orange" x="884.72" y="313" width="16" height="33" fill="#f55f44"/>
         </g>
-        <path ref="penCase" id="pen-case" d="M821.72,352h92v79.5a23.5,23.5,0,0,1-23.5,23.5h-45a23.5,23.5,0,0,1-23.5-23.5Z" fill="#EEAD0E"/>
+        <path ref="penCase" id="pen-case" d="M821.72,352h92v79.5a23.5,23.5,0,0,1-23.5,23.5h-45a23.5,23.5,0,0,1-23.5-23.5Z" fill="#6820FF"/>
         <g id="shadow-4" data-name="shadow" opacity="0.2">
           <path id="Trazado_23" data-name="Trazado 23" d="M821.72,352v4h88v79.5a23.37,23.37,0,0,1-5,14.49,23.43,23.43,0,0,0,9-18.49V352Z" fill="#02112e"/>
         </g>

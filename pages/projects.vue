@@ -9,12 +9,11 @@
                 <ScrollMouse/>
             </section>
             <section class="projects-portfolio">
-                <ProjectItems  style="background: url('/imgs/Thumbnail.png')"  projectTitle="My portfolio" action="Code ->" description="My portfolio of projects, to show my latest work. Made with Nuxt.js, Sass and GSAP for the animations."/>
-                <ProjectItems  style="background: url('/imgs/Afrorraices.png')"  projectTitle="Afrorraices Blog" action="Go Live ->" description="A blog website made with blogger CMS, but with personal customization of HTML and CSS to make it more appealing."/>
+                <ProjectItems :imgUrl="'/imgs/Afrorraices.png'"  projectTitle="Afrorraices Blog" description="Blog build with Blogger CMS and customized with a unique skin, using HTML and CSS for a more appealing look."/>
+                <ProjectItems :imgUrl="'/imgs/03.jpg'"  projectTitle="My personal website" description="A website build to showcase who am I and share what I'm working on, the main idea is to turn it into my center of operations, where everyone can see what Yudai Creator is all about. Build using Nuxt and SCSS, deployed on Netlify."/>
+                <ProjectItems :imgUrl="'/imgs/codepen.png'"  projectTitle="CodePen Profile" description="Visit my codepen profile, there I share code snippets about the animations I make."/>
             </section>
-            <section class="projects-portfolio">
-                <ProjectItems  style="background: url('/imgs/codepen.png')"  projectTitle="My Codepen Profile" action="Go Live ->" description="Thi is my Codepen profile where I store my work refering to animations and code snippets I share in Twitter."/>  
-            </section>
+           
             <footer>
                 <PageFooter/>
             </footer>
@@ -79,13 +78,7 @@ body{
 }
 
 .projects-portfolio{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    height: 80vh;
-    margin-top: 40px;
+    padding: 20px;
 }
 
 

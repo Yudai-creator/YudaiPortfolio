@@ -3,7 +3,7 @@
         <svg id="knowledge-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1092 731">
                         <g id="knowledge">
                             <rect ref="frame" id="frame" x="120" y="108" width="910" height="490" fill="#cfd5e3" stroke="#02112e" stroke-width="5"/>
-                            <rect ref="shadow" id="board-shadow" x="208" y="192" width="294" height="361" fill="#EEAD0E" stroke="#02112e" stroke-width="5" opacity="0.3" style="isolation:isolate"/>
+                            <rect ref="shadow" id="board-shadow" x="208" y="192" width="294" height="361" fill="#6820FF" stroke="#02112e" stroke-width="5" opacity="0.3" style="isolation:isolate"/>
                             <g ref="lines">
                                 <rect id="rect-8" x="615" y="218" width="235" height="13" fill="#02112e"/>
                                 <rect id="rect-7" x="615" y="242" width="342" height="13" fill="#02112e"/>
@@ -12,7 +12,7 @@
                                 <rect id="rect-4" x="615" y="324" width="342" height="13" fill="#02112e"/>
                                 <rect id="rect-3" x="615" y="348" width="342" height="13" fill="#02112e"/>
                                 <rect id="rect-2" x="615" y="372" width="342" height="13" fill="#02112e"/>
-                                <rect id="rect-1" x="615" y="454" width="123" height="34" fill="#EEAD0E"/>
+                                <rect id="rect-1" x="615" y="454" width="123" height="34" fill="#6820FF"/>
                             </g>
                             
                             <rect ref="board" id="board" x="227" y="172.5" width="294" height="361" fill="#02112e"/>
@@ -25,9 +25,9 @@
                                 <rect id="Rectángulo_56" data-name="Rectángulo 56" x="408.54" y="327.18" width="25.2" height="25.2" fill="#e6e6e6"/>
                                 <rect id="Rectángulo_57" data-name="Rectángulo 57" x="371.04" y="327.18" width="25.2" height="25.2" fill="#e6e6e6"/>
                                 <path ref="arrowShadow1" id="arrow-shadow-1" d="M334.34,404.18l-62-53.1,61.9-53-18.9-16.2-80.7,69.2,80.8,69.3Z" fill="#e6e6e6"/>
-                                <path ref="arrow2" id="arrow-2" d="M451.94,392.88l61.9-53.1-61.9-53.1,18.9-16.1,80.8,69.3-80.8,69.2-18.9-16.2Z" fill="#EEAD0E"/>
-                                <path id="dots" d="M325.84,345.58H351v-25.2h-25.2Zm126.4-25.2H427v25.2h25.2Zm-75.8,25.2h25.2v-25.2h-25.2Z" fill="#EEAD0E"/>
-                                <path ref="arrow1" id="arrow-1" d="M334.34,392.28l-62-53.1,61.9-53.1-18.9-16.2-80.8,69.3,80.8,69.3Z" fill="#EEAD0E"/>
+                                <path ref="arrow2" id="arrow-2" d="M451.94,392.88l61.9-53.1-61.9-53.1,18.9-16.1,80.8,69.3-80.8,69.2-18.9-16.2Z" fill="#6820FF"/>
+                                <path id="dots" d="M325.84,345.58H351v-25.2h-25.2Zm126.4-25.2H427v25.2h25.2Zm-75.8,25.2h25.2v-25.2h-25.2Z" fill="#6820FF"/>
+                                <path ref="arrow1" id="arrow-1" d="M334.34,392.28l-62-53.1,61.9-53.1-18.9-16.2-80.8,69.3,80.8,69.3Z" fill="#6820FF"/>
                             </g>
                         </g>
         </svg>

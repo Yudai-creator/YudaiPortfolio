@@ -38,11 +38,11 @@ export default {
         
 
         button.addEventListener("mouseover", () => {
-            tl.to(button, {duration: .2, backgroundColor: "#e7a90c", y: -5, ease: 'power3'})
+            tl.to(button, {duration: .2, backgroundColor: "#028a94", y: -5, ease: 'power3'})
         })
 
         button.addEventListener("mouseout", () => {
-            tl.to(button, {duration: .2, backgroundColor: "#ffb700", y: 0, ease: 'power3'})
+            tl.to(button, {duration: .2, backgroundColor: "#01BCC9", y: 0, ease: 'power3'})
         })
     }
 }

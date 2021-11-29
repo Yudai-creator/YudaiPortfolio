@@ -30,7 +30,7 @@
                 </ul>
             </div>
 
-            <p>Proudly build by <span>Yudai Creator</span>💙</p>
+            <p>Proudly build by <img src="/logo/VER_PRINCPIPAL.png"></p>
     </div>
         
         
@@ -96,7 +96,7 @@ export default  {
         }
         li{
             list-style: none;
-            background-color: #011d57;
+            background-color: $accent;
             border-radius: 50%;
             margin: 10px;
             transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
@@ -124,6 +124,13 @@ export default  {
         width: 700px;
         height: 2px;
         background-color: #022d85;
+    }
+
+    p img{
+        position: relative;
+        top: 15px;
+        width: 60px;
+        height: 60px;
     }
     
 }

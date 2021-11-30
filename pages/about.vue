@@ -216,7 +216,7 @@ body{
     transition: all .5 ease-in-out;
 
     &:hover{
-        background-color: #e7a90c;
+        background-color: #028a94;
         transform: translateY(-2px);
     }
 }
@@ -227,6 +227,45 @@ body{
 
 .about-enter, .about-leave-active{
     opacity: 0;
+}
+
+@media (min-width: $extra-large-screen){
+    .about-header{
+        h1{
+            font-size: 5.5em;
+        }
+    }
+    
+    .about-presentation{
+        p{
+            font-size: 2.0em;
+        }
+    }
+
+    .about-experience{
+        h2{
+            font-size: 4.5em;
+        }
+
+        p{
+            font-size: 2em;
+        }
+    }
+
+    .about-techstack{
+        h2{
+            font-size: 4.5em;
+        }
+        p{
+            font-size: 2em;
+        }
+    }
+
+    .about__CV{
+        padding: 20px;
+        top: 25px;
+    }
+    
 }
 
 @media (max-width: $tablet-size){

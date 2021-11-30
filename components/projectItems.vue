@@ -84,22 +84,26 @@ export default {
     }
 }
 
-@media (max-width: $phone-size){
-    .container{
-        width: 380px;
-        height: 300px;
 
-        .project-box{
-            transform: translateY(280px);
+
+@media (max-width: $phone-size){
+    
+    .container{
+        display: block;
+        
+        .img-container{
+            img{
+                width: 250px;
+                height: 200px;
+            }
         }
     }
+    
+    
 }
 
 @media (max-width: 375px){
-    .container{
-        width: 320px;
-        height: 270px;
-    }
+    
 }
 
 </style>

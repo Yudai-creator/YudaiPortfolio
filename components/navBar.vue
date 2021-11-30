@@ -1,13 +1,13 @@
 <template name="NavBar">
     <div class="nav-wrapper">
 
+        <nuxt-link class="logo" to="/"><img src="/logo/VER_VERTICAL_FULL.png"></nuxt-link>
+        
         <a ref="toggle" id="toggle-menu" @click="isActive = !isActive" href="#">
-            <svg    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="#02112E"/>
             </svg>
         </a>
-        
-        <nuxt-link to="/"><img src="/logo/VER_VERTICAL_FULL.png"></nuxt-link>
 
         <nav class="navbar">
             <ul :class="{'show' : isActive, 'hide' : !isActive}" ref="navLinks" class="nav-links">
@@ -19,6 +19,9 @@
                 </li>    
                 <li id="nav-item-3">
                     <nuxt-link to='/projects'>Projects</nuxt-link>
+                </li>
+                <li id="nav-item-5">
+                    <nuxt-link to='/blog'>Blog</nuxt-link>
                 </li>
                 <li id="nav-item-4">
                     <nuxt-link to='/services'>Services</nuxt-link>
@@ -136,7 +139,7 @@ export default {
         @include tranistion-hover();
         
     }
-     #nav-item-1:hover::after{
+    #nav-item-1:hover::after{
             width: 50px;
     }
 
@@ -197,7 +200,59 @@ export default {
         width: 59px
     }
 
+    #nav-item-5::after{
+        content: '';
+        position: absolute;
+        transform-origin: center;
 
+        width: 0px;
+        height: 2px;
+        background-color: $terciary;
+        
+        top: 100%;
+        left: 0%;
+        
+        @include tranistion-hover();
+    } 
+    
+    #nav-item-5:hover::after{
+        width: 39px
+    }
+
+@media (min-width: $extra-large-screen){
+    .nav-wrapper{
+        a{
+            font-size: 1.75em;
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    #nav-item-1:hover::after{
+            width: 80px;
+    }
+
+    #nav-item-2:hover::after{
+            width: 80px;
+    }
+
+    #nav-item-3:hover::after{
+            width: 98px;
+    }
+
+    #nav-item-4:hover::after{
+            width: 100px;
+    }
+
+    #nav-item-5:hover::after{
+            width: 70px;
+    }
+    
+    
+}
 
 
 
@@ -237,10 +292,6 @@ export default {
         &:hover{
             cursor: pointer;
         }
-    }
-
-    .lang{
-        display: none;
     }
 
     
@@ -290,22 +341,17 @@ export default {
     #toggle-menu{
         display: block;
         margin-left: 45px;
-
-        margin-top: 50px;
+        position: relative;
+        left: 300px;
         &:hover{
             cursor: pointer;
         }
     }
 
-    .lang{
-        display: none;
-    }
-
-    
-
     .nav-links{
         flex-direction: column;
-        
+        position: relative;
+        left: 100px;  
         background-color: $primary;
         z-index: 2;
         
@@ -319,9 +365,15 @@ export default {
         }
     }
 
+    .logo{
+        position: relative;
+        top: 50px;
+        right: 20px;
+    }
+
     .show{
         //display: block;
-        height: 140px;
+        height: 180px;
         transition: all .5s ease-in-out;
         opacity: 1;
     }

@@ -82,8 +82,6 @@ body{
 }
 
 
-
-
 .projects-enter-active, .projects-leave-active{
     transition: opacity .5s ease-in-out;
 }
@@ -93,20 +91,19 @@ body{
 }
 
 @media (max-width: $tablet-size){
-    .projects-portfolio{
-        height: 50vh;
-    }
+    
 }
 
 
 @media (max-width: $phone-size){
-    .projects-portfolio{
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
 
     .projects-headline{
         margin-left: 50px;
+    }
+
+    footer{
+        position: relative;
+        bottom: 0;
     }
 }
 

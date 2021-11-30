@@ -93,7 +93,7 @@ export default  {
         transition: all .5s ease-in-out;
 
         &:hover{
-            background-color: #e7a90c;
+            background-color: #028a94;
             transform: translateY(-2px);
             cursor: pointer;
         }
@@ -105,8 +105,11 @@ export default  {
 @media (max-width: $phone-size){
     .container{
 
+        padding: 50px;
+
         position: relative;
-        top: 150px;
+        margin-top: 80px;
+        margin-bottom: 80px;
 
         .form__control{
             width: 300px;
@@ -114,6 +117,8 @@ export default  {
 
         .form__submit{
             width: 300px;
+            padding: 20px;
+            text-align: center;
         }
     } 
 }

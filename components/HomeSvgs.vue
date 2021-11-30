@@ -175,6 +175,19 @@ div{
     }
 }
 
+//large-screens
+@media (min-width: $extra-large-screen){
+  #desktop_pc{
+    width: 700px;
+    height: 700px;
+  }
+
+  #blob-home{
+    width: 900px;
+    height: 900px;
+  }
+}
+
 
 //table-landscape-size
 @media (max-width: $tablet-landscape-size){

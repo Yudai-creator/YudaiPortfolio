@@ -37,6 +37,16 @@ export default{
     }
 
 
+@media (min-width: $extra-large-screen){
+    h1{
+        font-size: 5.5em;
+    }
+    p{
+        font-size: 2.5em;
+    }
+}    
+
+
 @media (max-width: $tablet-size){
     h1{
         font-size: 2.2em;

@@ -88,8 +88,7 @@ export default {
     position: relative;
     margin-right: 250px;
 
-    width: 500px;
-    height: 500px;
+    
 
     z-index: -1;
     bottom: 60px;
@@ -106,6 +105,7 @@ export default {
   .home-enter, .home-leave-active{
     opacity: 0;
   }
+
 
 
 //table-landscape-size

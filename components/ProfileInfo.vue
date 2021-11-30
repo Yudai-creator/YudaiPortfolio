@@ -43,6 +43,16 @@ div{
     }
 }
 
+@media (min-width: $extra-large-screen){
+    .about-profile-pic{
+        margin-right: 80px;
+        img{
+            width: 400px;
+            height: 550px;
+        }
+    }
+}
+
 
 
 @media (max-width: $tablet-size){
@@ -67,7 +77,7 @@ div{
     .about-profile-pic{ 
     img{
         width: 200px;
-        height: 200px;
+        height: 250px;
     }
     }  
 }

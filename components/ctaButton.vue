@@ -80,6 +80,7 @@ export default {
 
 
 
+
 @media (max-width: $tablet-size){
     .btn-area{
         margin-left: -100px;

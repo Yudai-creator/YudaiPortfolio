@@ -77,7 +77,17 @@ export default {
     }  
 }
 
+@media (min-width: $extra-large-screen){
+    .btn-area{
+        width: 200px;
+        height: 80px;
 
+        a{
+            font-size: 20px;
+        }
+        
+    }
+}
 
 
 

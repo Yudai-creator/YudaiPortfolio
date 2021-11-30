@@ -100,6 +100,22 @@ export default  {
     }
 }
 
+@media (min-width: $extra-large-screen){
+    .contact__text{
+        h2{
+            font-size: 3em;
+        }
+        p{
+            font-size: 2em;
+        }
+    }
+
+    form{
+        label{
+            font-size: 1.5em;
+        }
+    }
+}
 
 
 @media (max-width: $phone-size){

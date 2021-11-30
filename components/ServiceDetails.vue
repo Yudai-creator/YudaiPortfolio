@@ -66,6 +66,27 @@ div{
         margin-top: 20px;
     }
 }
+
+@media (min-width: $extra-large-screen){
+    div{
+        width: 300px;
+        height: 350px;
+
+        img{
+            width: 40px;
+            height: 40px;
+        }
+
+        h3{
+            font-size: 1.8em;
+        }
+
+        p{
+            font-size: 1.2em;
+        }
+    }
+}
+
 @media (max-width: $tablet-size){
 
     div{

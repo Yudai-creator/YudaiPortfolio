@@ -135,7 +135,7 @@ body{
     display: flex;
     justify-content: space-around;
 
-    margin-top: 150px;
+    margin-top: 350px;
     margin-bottom: 150px;
     
     color: $primary;
@@ -150,6 +150,34 @@ body{
         border-radius: 20px;
     }
 }
+
+.services_form{
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: $extra-large-screen){
+    .service-header{
+        h1{
+            font-size: 5em;
+        }
+    }
+
+    .service-intro{
+        p{
+            font-size: 2.5em;
+        }
+    }
+
+    .services-details{
+        .backlit{
+            width: 1500px;
+            height: 350px;
+        }
+    }
+}
+
+
 
 @media (max-width: $tablet-landscape-size){
     .mouse-shadow{

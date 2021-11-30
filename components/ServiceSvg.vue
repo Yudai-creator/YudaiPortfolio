@@ -136,6 +136,24 @@ div{
     }
 }
 
+@media (min-width: $extra-large-screen){
+    
+    div{
+        right: 150px;
+        #building_websites{
+            width: 500px;
+            height: 500px;
+        }
+
+        #blob{
+            width: 550px;
+            height: 550px;
+        }
+    }
+    
+    
+}
+
 @media (max-width: $tablet-landscape-size){
     div{
         position: relative;

@@ -70,6 +70,7 @@ export default {
     background: $primary;
     font-family: $font;
     color: $secondary;
+    overflow-x: hidden;
   }
 
   .home{
@@ -88,7 +89,8 @@ export default {
     position: relative;
     margin-right: 250px;
 
-    
+    width: 500px;
+    height: 500px;
 
     z-index: -1;
     bottom: 60px;
@@ -106,6 +108,11 @@ export default {
     opacity: 0;
   }
 
+@media (min-width: $extra-large-screen){
+  .home-graphics{
+    margin-right: 350px;
+  }
+}
 
 
 //table-landscape-size

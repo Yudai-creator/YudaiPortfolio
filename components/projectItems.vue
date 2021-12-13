@@ -3,7 +3,7 @@
         <div class="project-description">
             <h2>{{projectTitle}}</h2>
             <p>{{description}}</p>
-            <a href="#">Go live</a>
+            <a :href="link">{{action}}</a>
             
         </div>
         
@@ -31,7 +31,8 @@ export default {
         projectTitle: String,
         imgUrl: String,
         description: String,
-        action: String
+        action: String,
+        link: String
     },
     mounted(){
         const {project} = this.$refs
@@ -57,14 +58,14 @@ export default {
     .img-container{
         img{
             max-width: 400px;
-            max-height: 400px;
+            
             box-shadow: 3px 3px 5px rgb(196, 195, 195), -3px -3px 5px rgb(196, 195, 195);
         }
     }
 
     .project-description{
         p{
-            max-width: 400px;
+            max-width: 50ch;
             font-weight: 500;
             margin-top: 5px;
         }
@@ -94,8 +95,15 @@ export default {
         .img-container{
             img{
                 width: 250px;
-                height: 200px;
+                
             }
+        }
+
+        .project-description{
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
     

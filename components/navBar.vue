@@ -4,9 +4,7 @@
         <nuxt-link class="logo" to="/"><img src="/logo/VER_VERTICAL_FULL.png"></nuxt-link>
         
         <a ref="toggle" id="toggle-menu" @click="isActive = !isActive" href="#">
-            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="#02112E"/>
-            </svg>
+           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg> 
         </a>
 
         <nav class="navbar">
@@ -19,9 +17,6 @@
                 </li>    
                 <li id="nav-item-3">
                     <nuxt-link to='/projects'>Projects</nuxt-link>
-                </li>
-                <li id="nav-item-5">
-                    <nuxt-link to='/blog'>Blog</nuxt-link>
                 </li>
                 <li id="nav-item-4">
                     <nuxt-link to='/services'>Services</nuxt-link>
@@ -60,7 +55,7 @@ export default {
         const {toggle, navLinks} = this.$refs
 
         toggle.addEventListener("click", () => {
-            gsap.fromTo(toggle, {x: -5, rotate: 20}, {duration: .8, x: 0, rotate: 0, ease: "bounce.out"})
+            gsap.fromTo(toggle, {x: -5, rotate: 5}, {duration: .5, transformOrigin:"50% 50%", x: 0, rotate: 0, ease: "bounce.out"})
         })
 
     }
@@ -200,24 +195,24 @@ export default {
         width: 59px
     }
 
-    #nav-item-5::after{
-        content: '';
-        position: absolute;
-        transform-origin: center;
+    // #nav-item-5::after{
+    //     content: '';
+    //     position: absolute;
+    //     transform-origin: center;
 
-        width: 0px;
-        height: 2px;
-        background-color: $terciary;
+    //     width: 0px;
+    //     height: 2px;
+    //     background-color: $terciary;
         
-        top: 100%;
-        left: 0%;
+    //     top: 100%;
+    //     left: 0%;
         
-        @include tranistion-hover();
-    } 
+    //     @include tranistion-hover();
+    // } 
     
-    #nav-item-5:hover::after{
-        width: 39px
-    }
+    // #nav-item-5:hover::after{
+    //     width: 39px
+    // }
 
 @media (min-width: $extra-large-screen){
     .nav-wrapper{
@@ -286,9 +281,9 @@ export default {
     #toggle-menu{
         display: block;
         
-        background-color: $secondary;
-        width: 50px;
-        border-radius: 50%;
+        // background-color: $secondary;
+        // width: 50px;
+        // border-radius: 50%;
         &:hover{
             cursor: pointer;
         }
@@ -343,6 +338,8 @@ export default {
         margin-left: 45px;
         position: relative;
         left: 300px;
+
+        transform-origin: center;
         &:hover{
             cursor: pointer;
         }

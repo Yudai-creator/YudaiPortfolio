@@ -16,7 +16,7 @@
                         You have come to the right place.  
                     </p>
                 <div ref="cta" class="service-button-area">
-                    <CtaButton  class="btn" btntext="Get in touch!" page="#"/>
+                    <CtaButton  class="btn" btntext="Get in touch!" page="#contact"/>
                 </div>
                 </div>
                 <ServiceSvg/>
@@ -31,7 +31,7 @@
                     <ServiceDetails icon="/icons/bxs-buildings.svg" headline="Setup your own SPA" text="I design and build custom digital products that help businesses grow. I offer you a site perfectly adjusted to your needs"/>
                 </div>
             </section>
-            <section class="services_form">
+            <section id="contact" class="services_form">
                 <ContactForm/>
             </section>
             <footer>
@@ -201,15 +201,15 @@ body{
         margin-left: 40px;
         margin-top: 20px;
         h1{
-        font-size: 2.5em;
-    }
+            font-size: 2.5em;
+        }
     }
     
 
     .service-intro{
         display: inline;
         position: relative;
-        right: 30px;
+        
         div{
             display: flex;
             flex-direction: column;
@@ -218,12 +218,16 @@ body{
         p{
             font-size: 1em;
             margin: 0;
+            position: relative;
+            right: 20px;
+            width: 30ch;
         }
     }
 
     .services{
         position: relative;
-        top: 180px;
+        top: 120px;
+        right: 50px;
     }
 
     .services-details{
@@ -234,10 +238,6 @@ body{
     .service-button-area{
         position: relative;
         right: 150px;
-    }
-
-    .services_form{
-        height: 50vh;
     }
 
     .backlit{

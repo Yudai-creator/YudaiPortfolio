@@ -13,8 +13,8 @@
           beautiful and functional web applications.<br> 
         </p>
         -->
-        <RichText headline="Hi and welcome I'm Yudai" 
-        text="I am a Web Developer focus on builidng
+        <RichText headline="Hi and welcome, I'm Yudai" 
+        text="I am a Web Developer, focus on builidng
           beautiful and functional web applications. "/>
 
         <div class="home-button-area">
@@ -65,12 +65,16 @@ export default {
   box-sizing: border-box;
 }
 
+html{
+  overflow-x: hidden;
+}
 
   body{
     background: $primary;
     font-family: $font;
     color: $secondary;
     overflow-x: hidden;
+    position: relative;
   }
 
   .home{

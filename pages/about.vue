@@ -8,7 +8,7 @@
         <main class="about-content">
             <section class="about-presentation">
                 <div ref="text" class="about-text">
-                    <p>I am currently working as a Front-End Developer.<br> 
+                    <p>I'm currently working as a Front-End Developer.<br> 
                     I have experience as a UI/UX designer and<br> 
                     building beautiful websites its my gig.<br>
                     <br> 
@@ -49,7 +49,9 @@
                         <br>
                     </p> 
                 </div>
-                <TechstackSvg/>   
+                <div class="about-techstack-graphics ">
+                    <TechstackSvg/>  
+                </div>     
             </section>
             <footer>
                 <PageFooter/>
@@ -289,7 +291,6 @@ body{
 
     .about-presentation{
         display: inline;
-        text-align: center;
         .about-text{
             position: relative;
             width: 100%;
@@ -313,14 +314,16 @@ body{
     }
 
     .about-presentation{
-        display: inline;
+        flex-direction: column;
+        align-items: center;
         .about-text{
             position: relative;
-            top: 200px;
+            top: 220px;
             width: 100%;
-            padding: 30px;
+            padding: 35px;
             p{
                 font-size: 1em;
+                width: 38ch;
             }
         }
     }
@@ -333,7 +336,7 @@ body{
     .about-profile-pic{ 
     img{
         position: relative;
-        left: 50px;
+        left: 100px;
         width: 200px;
         height: 200px;
         animation: none;
@@ -379,14 +382,8 @@ body{
             }
         }
         .about-techstack-graphics{
-            #blob{
-                display: none;
-            }
-            #knowledge-svg{
-                position: relative;
-                width: 300px;
-                height: 300px;
-            }
+            position: relative;
+            right: 25px;
         }
     }
 

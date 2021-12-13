@@ -121,7 +121,7 @@ export default  {
 @media (max-width: $phone-size){
     .container{
 
-        padding: 50px;
+        padding: 30px;
 
         position: relative;
         margin-top: 80px;
@@ -133,7 +133,7 @@ export default  {
 
         .form__submit{
             width: 300px;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
         }
     } 

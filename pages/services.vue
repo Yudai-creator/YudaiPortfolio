@@ -9,11 +9,7 @@
             <section class="service-intro">
                 <div>
                     <p ref="text">
-                        Do you want to make your business be known<br> 
-                        and make more clients?
-                        <br>
-                        <br>
-                        You have come to the right place.  
+                        I help you go through the process of designing and building a website that match you expectatives.
                     </p>
                 <div ref="cta" class="service-button-area">
                     <CtaButton  class="btn" btntext="Get in touch!" page="#contact"/>
@@ -64,7 +60,7 @@ export default {
   },
   data (){
       return{
-          title: 'What can I do for you?'
+          title: 'Build a good website and thank me later.'
       }
   },
   head(){
@@ -201,7 +197,8 @@ body{
         margin-left: 40px;
         margin-top: 20px;
         h1{
-            font-size: 2.5em;
+            font-size: 1.8rem;
+            width: 20ch;
         }
     }
     
@@ -219,7 +216,7 @@ body{
             font-size: 1em;
             margin: 0;
             position: relative;
-            right: 20px;
+            right: 50px;
             width: 30ch;
         }
     }
@@ -227,7 +224,7 @@ body{
     .services{
         position: relative;
         top: 120px;
-        right: 50px;
+        
     }
 
     .services-details{

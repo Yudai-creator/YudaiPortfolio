@@ -9,7 +9,7 @@
                 <ScrollMouse/>
             </section>
             <section class="projects-portfolio">
-                <ProjectItems :imgUrl="'/imgs/motion gallery.png'" action="Vamo a ver" link="#"  projectTitle="Motion Gallery" description="My personal project about animations. A library of custom animations made with SASS power, thanks to this preprocessor you can achieve great things. In this case I use it to create cool animations to enrich user experience."/>
+                <ProjectItems style="display: none" :imgUrl="'/imgs/motion gallery.png'" action="Vamo a ver" link="#"  projectTitle="Motion Gallery" description="My personal project about animations. A library of custom animations made with SASS power, thanks to this preprocessor you can achieve great things. In this case I use it to create cool animations to enrich user experience."/>
                 <ProjectItems :imgUrl="'/imgs/Afrorraices.png'" action="Go live" link="#"  projectTitle="Afrorraices Blog" description="Blog build with Blogger CMS and customized with a unique skin, using HTML and CSS for a more appealing look."/>
                 <ProjectItems :imgUrl="'/imgs/03.jpg'" action="Code" link="#"  projectTitle="My personal website" description="A website build to showcase who am I and share what I'm working on, the main idea is to turn it into my center of operations, where everyone can see what Yudai Creator is all about. Build using Nuxt and SCSS, deployed on Netlify."/>
                 <ProjectItems :imgUrl="'/imgs/codepen.png'" action="Go live" link="#"  projectTitle="CodePen Profile" description="Visit my codepen profile, there I share code snippets about the animations I make."/>

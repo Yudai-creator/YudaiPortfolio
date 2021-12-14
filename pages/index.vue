@@ -63,10 +63,13 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  -webkit-box-sizing: border-box;
 }
 
 html{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
   body{
